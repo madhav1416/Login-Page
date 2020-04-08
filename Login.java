@@ -32,7 +32,7 @@ id = t1.getText();
 password =t2.getPassword().toString();
 try { 
     Class.forName("com.mysql.cj.jdbc.Driver");
-    con = DriverManager.getConnection("jdbc:mysql://localhost/madhav?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","");
+    con = DriverManager.getConnection("jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","");
     stm=con.createStatement();
     String sql;
     sql ="INSERT INTO login(id,password) VALUES('"+id+"','"+password+"')";
